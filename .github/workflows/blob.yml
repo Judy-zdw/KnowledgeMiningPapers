@@ -10,9 +10,9 @@ jobs:
       - uses: actions/checkout@v2
       - uses: bacongobbler/azure-blob-storage-upload@v1.1.1
         with:
-          source_dir: _dist
-          container_name: www
-          connection_string: ${{ secrets.ConnectionString }}
-          extra_args: '--pattern *.tar.gz'
-          sync: false
+          source_dir: papers\
+          container_name: researchpapers
+          connection_string: ${{ DefaultEndpointsProtocol=https;AccountName=knowledgeminingdata;AccountKey=VDrHZYXxmXdpSKj7p66ulI/36Gk83+wtUCXxc7XHzzM14haAA/z+KeedUbVosgnpy8MH65opJuau6QfDmSQLSQ==;EndpointSuffix=core.windows.net}}
+          #extra_args: '--pattern *.tar.gz'
+          #sync: false
 
